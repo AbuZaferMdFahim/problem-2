@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Search History</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>User Search History</h1>
+        <!-- Chat Interface -->
+        <div class="chat-container">
+            <div class="message">User 1 searched for "Keyword 1" at 10:00 AM</div>
+            <div class="message">User 2 searched for "Keyword 2" at 11:30 AM</div>
+            <div class="message">User 3 searched for "Keyword 3" at 12:45 PM</div>
+        </div>
+        <!-- Search History Filters -->
+        <div class="filter-container">
+            <h3>Filters</h3>
+            <!-- Keywords Filter -->
+            <div class="form-group">
+                <label>All Keywords:</label><br>
+                <input type="checkbox" id="keyword1"> <label for="keyword1">Keyword 1 (20 times found)</label><br>
+                <input type="checkbox" id="keyword2"> <label for="keyword2">Keyword 2 (12 times found)</label><br>
+                <input type="checkbox" id="keyword3"> <label for="keyword3">Keyword 3 (8 times found)</label>
+            </div>
+            <!-- Users Filter -->
+            <div class="form-group">
+                <label>All Users:</label><br>
+                <input type="checkbox" id="user1"> <label for="user1">User 1</label><br>
+                <input type="checkbox" id="user2"> <label for="user2">User 2</label><br>
+                <input type="checkbox" id="user3"> <label for="user3">User 3</label>
+            </div>
+            <!-- Time Range Filter -->
+            <div class="form-group">
+                <label>Time Range:</label><br>
+                <input type="checkbox" id="yesterday"> <label for="yesterday">See data from yesterday</label><br>
+                <input type="checkbox" id="lastWeek"> <label for="lastWeek">See data from last week</label><br>
+                <input type="checkbox" id="lastMonth"> <label for="lastMonth">See data from last month</label>
+            </div>
+            <!-- Select Date Range -->
+            <div class="form-group">
+                <label for="startDate">Select Date:</label><br>
+                <input type="date" id="startDate" name="startDate">
+                <input type="date" id="endDate" name="endDate">
+            </div>
+            <!-- More Filters -->
+            <div class="form-group">
+                <label> Filters:</label><br>
+                <label> Filters:</label><br>
+                <label> Filters:</label><br>
+                <label> Filters:</label><br>
+                <!-- Add more filters here -->
+            </div>
+            <!-- Apply Filter Button -->
+            <button class="btn btn-primary">Apply Filters</button>
+            <button class="btn btn-primary">Apply Filters</button>
+            <button class="btn btn-primary">Apply Filters</button>
+            <button class="btn btn-primary">Apply Filters</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
